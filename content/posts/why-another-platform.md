@@ -1,7 +1,7 @@
 +++
 title = 'Why yet another platform?'
 date = 2024-01-14T07:07:07+01:00
-draft = true
+draft = false
 +++
 
 Ever since I was a child, I have always felt the need to document my thoughts and capture fleeting moments of my life. It started as a diary which served the purpose of retrospection (however much is imagineable in the life of a kid) which was of course naive but it helped me develop my writing and formulation skills. In high school, when I decided to go down the path of linguistics, I was required to pass a state examination on literature so there I was consuming the classics of literature and writing god knows how many literary analyses. I was compelled by the literary world and was blessed with a teacher who took my pursuits seriously and indulged me in lengthy discussions on the motives of literary heroes. As I moved into the depth of linguistic academia, the fiction literature was more and more replaced by scientific articles and empirical studies and the need to write migrated to personal notes on my IPhone. In both my linguistic and programming journey, I was genuinely passionate about the discoveries I was making and always tried to relate them to the modern world and my own experiences. I felt the need to share it.
