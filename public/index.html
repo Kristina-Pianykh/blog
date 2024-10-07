@@ -146,10 +146,10 @@
     
       <article class="post on-list">
         <h2 class="post-title">
-          <a href="//localhost:1313/posts/why-another-platform/">Why yet another platform?</a>
+          <a href="//localhost:1313/posts/thesis-learnings-part-4/">Thesis Learnings, Part 4</a>
         </h2>
 
-        <div class="post-meta"><time class="post-date">2024-01-14</time></div>
+        <div class="post-meta"><time class="post-date">2024-08-10</time></div>
 
         
 
@@ -158,7 +158,123 @@
 
         <div class="post-content">
           
-            <p>Ever since I was a child, I have always felt the need to document my thoughts and capture fleeting moments of my life. It started as a diary which served the purpose of retrospection (however much is imagineable in the life of a kid) which was of course naive but it helped me develop my writing and formulation skills. In high school, when I decided to go down the path of linguistics, I was required to pass a state examination on literature so there was I consuming the classics of literature and writing god knows how many literary analyses. I was compelled by the literary world and was blessed with a teacher who took my pursuits seriously and indulged me in lengthy discussions on the motives of literary heroes. As I moved into the depth of linguistic academia, the fiction literature was more and more replaced by scientific articles and empirical studies but the need to write migrated to personal notes on my IPhone. In both my linguistic and programming journey, I was genuinely passionate about the discoveries I was making and always tried to relate them to the modern world and my own experiences. I felt the need to share it.</p>
+            <h2 id="on-java-lsp-support-and-editor1">On Java LSP support and editor<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
+<p>A note on IDE. <a href="https://github.com/letieu/btw.nvim?tab=readme-ov-file">I use neovim btw</a> but that was until God blessed me with Java. Is what you probably expect me to say. And indeed setting up a Java LSP for neovim turned out as difficult as they say. I abondoned my beloved code editor and asked daddy aka my employer for a premium license for IntelliJ. I spent a bit of time rewriting some of the most basic functionality from neovim config in Lua to Vim script to still benefit from Vim motions in the IntelliJ IDE. I have to admit the IDE made many things easier but after a while I still turned back to neovim. Buckled up and divided into the LSP setup once again. I ended up with <a href="https://github.com/georgewfraser/java-language-server"><code>java-language-server</code></a> (as opposed to the more popular <a href="https://github.com/mfussenegger/nvim-jdtls"><code>jdtls</code></a> but it gave me the most basic things I needed: code diagnostics and quick remedy strategies (hashtag <code>lsp_code_actions</code>), signature help, autocomplete suggestions, etc. Although granted, there’re still many things I’m unhappy about (e.g. symbol signature and third-party code, more stable cross-project referencing) but this is most likely due to a skill issue.
+The end line to this is that despite some LSP issues, I still found myself more productive writing Java in neovim as opposed to the fully featured IntelliJ IDE. Yet another tribute to the power of well ingrained development workflows and habits that neovim inspires.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/thesis-learnings-part-4/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="//localhost:1313/posts/thesis-learnings-part-3/">Thesis Learnings, Part 3</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-07-10</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="on-input-validation-and-error-handling1">On input validation and error handling<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
+<ul>
+<li>
+<p>Always validate your inputs. And by that I mean ALWAYS. This will spare you hours of running simulations only to find out that something went wrong and changed the behaviour of the entire system</p>
+</li>
+<li>
+<p>Confirm your expectation of the system behaviour. Especially in a non-deterministic aka asynchronous context. ESPECIALLY in a distributed setting with a high data transmission ratio. There’s no humanly possible way to prune gigabytes of log files to verify your assumptions.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/thesis-learnings-part-3/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="//localhost:1313/posts/thesis-learnings-part-2/">Thesis Learnings, Part 2</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-06-10</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="on-abstraction-and-ugly-code1">On abstraction and ugly code<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
+<ul>
+<li>
+<p><strong>DO NOT ABSTRACT UNLESS ABSOLUTELY NECESSARY!</strong> Yep, I said it. Abstractions are beautiful in theory and Java makes it so tempting to start with an abstraction and work your way down to specifics. Fight the urge to abstract early, you’ll thank me later.</p>
+</li>
+<li>
+<p>This goes in hand with the above but I’ll make a separate point out of it. Do not try to be a smart-ass. Clean code, modularisation - out of the window. This is unimportant in the POC stage. Hack it out as fast as possible to get a working solution. I&rsquo;d go even further than that. Make it your goal to make it as ugly as possible. Avoid early optimisation and getting stuck on splitting your code into functions 4 lines of code each (I&rsquo;m sorry, Uncle Bob). Raw dawg 50 line-functions all the way, embrace code duplication. Embrace chaos. Only when it starts getting really uncomfortable for you (and by that I don’t mean your perfectionism), only then do some refactoring. Don’t let some abstract principle guide your hand. Make it dirty and functional because you learn so SO many things about the process.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/thesis-learnings-part-2/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="//localhost:1313/posts/thesis-learnings-part-1/">Thesis Learnings, Part 1</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-05-10</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <h2 id="the-power-of-positive-mindset-even-if-its-java1">The power of positive mindset (even if it’s java).<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h2>
+<p>It will get you a good head start on the most challenging part of solving a difficult problem with a language you <del>hate</del> slightly dislike.
+Having a positive mindset helped me push through the initial learning curve (especially the part with functional Java) and set me on the way of thinking to focus instead on the things that I do find enjoyable. For example, I hadn’t dealt so much with threads before and the way Java handles it makes it a less horrifying experience. But this applies to other things I had to find my way around in Java. Suddenly, the bloated world of alien Java modifiers (like <code>volitile</code> and <code>synchronised</code>) starts slowly to make sense. After building a a few simple TCP servers you feel slightly more confident and optimistic.</p>
+          
+        </div>
+
+        
+          <div>
+            <a class="read-more button inline" href="/posts/thesis-learnings-part-1/">Read more</a>
+          </div>
+        
+      </article>
+    
+      <article class="post on-list">
+        <h2 class="post-title">
+          <a href="//localhost:1313/posts/why-another-platform/">Why yet another platform?</a>
+        </h2>
+
+        <div class="post-meta"><time class="post-date">2024-04-10</time></div>
+
+        
+
+        
+
+
+        <div class="post-content">
+          
+            <p>Ever since I was a child, I have always felt the need to document my thoughts and capture fleeting moments of my life. It started as a diary which served the purpose of retrospection (however much is imagineable in the life of a kid) which was of course naive but it helped me develop my writing and formulation skills. In high school, when I decided to go down the path of linguistics, I was required to pass a state examination on literature so there I was consuming the classics of literature and writing god knows how many literary analyses. I was compelled by the literary world and was blessed with a teacher who took my pursuits seriously and indulged me in lengthy discussions on the motives of literary heroes. As I moved into the depth of linguistic academia, the fiction literature was more and more replaced by scientific articles and empirical studies and the need to write migrated to personal notes on my IPhone. In both my linguistic and programming journey, I was genuinely passionate about the discoveries I was making and always tried to relate them to the modern world and my own experiences. I felt the need to share it.</p>
           
         </div>
 
