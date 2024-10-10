@@ -46,14 +46,14 @@ paginate = 5
   # can be overridden in a page's front-matter
   # TocTitle = "Table of Contents" # default
 
-
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Tada!"
+    subtitle = "Personal thoughts on programming topics"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "Personal thoughts on programming topics"
       owner = ""
       keywords = ""
       copyright = ""
@@ -79,4 +79,19 @@ paginate = 5
       #   [[languages.en.menu.main]]
       #     identifier = "showcase"
       #     name = "Showcase"
-      #     url = "/showcase"
+
+ [[params.links.developer]]
+  name = "GitHub"
+  url = "https://github.com/<our_domain>/"
+  icon = "fab fa-github"
+  desc = "Development takes place here!"
+[[params.links.developer]]
+  name = "Slack"
+  url = "https://<our_domain>.slack.com"
+  icon = "fab fa-slack"
+  desc = "Chat with other project developers"
+[[params.links.developer]]
+  name = "Developer Help"
+  url = "mailto:developers-help@<our_domain>.com"
+  icon = "fa fa-envelope"
+  desc = "Ask questions about the our SDK"     #     url = "/showcase"
