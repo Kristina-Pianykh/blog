@@ -40,7 +40,7 @@ Learn your tools and how to use them to interact with your system. Things like B
 
     The logs look exactly as you might expect in a typical Java application with `Log4j`:
 
-    ![logs](/images/logs.png)
+    ![logs](images/logs.png)
 
     To inspect what happens in the system with non-deterministic behavior and test my assumptions about its behavior, I wrote some test using [bash bats](https://github.com/bats-core/bats-core). The example test below counts the number of total complex events sent and received to make sure that the "at-most-once" message delivery guarantee is fulfilled.
 
