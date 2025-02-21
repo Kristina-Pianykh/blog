@@ -54,4 +54,4 @@ input text -> loop path -> path + canvas -> just canvas
 
 My big hope is that I can last longer in AoC 2024.
 
-[^1]: http://localhost:1313/posts/thesis-learnings-part-1/
+[^1]: https://kristina-pianykh.github.io/blog/posts/thesis-learnings-part-1/
